@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="stylesheet" href="style.css">
+   <link rel="icon" href="./assets/svg/alien-svgrepo-com.svg">
+   <title>tic-tac-toe</title>
+   <script src="https://use.fontawesome.com/157c80d271.js"></script>
+</head>
+<body>
+   <svg display = "none">
+      <symbol  viewBox="0 0 1024 1024" id="logo">
+         <path d="M938.666667 85.333333l-192 0-106.666667 0L384 85.333333l-64 0L85.333333 85.333333C38.4 85.333333 0 123.733333 0 170.666667l0 469.333333c0 46.933333 38.4 85.333333 85.333333 85.333333l384 0 0 128L256 853.333333c-23.466667 0-42.666667 19.2-42.666667 42.666667 0 23.466667 19.2 42.666667 42.666667 42.666667l512 0c23.466667 0 42.666667-19.2 42.666667-42.666667 0-23.466667-19.2-42.666667-42.666667-42.666667L554.666667 853.333333l0-128 384 0c46.933333 0 85.333333-38.4 85.333333-85.333333L1024 170.666667C1024 123.733333 985.6 85.333333 938.666667 85.333333zM938.666667 618.666667c0 12.8-8.533333 21.333333-21.333333 21.333333L106.666667 640c-12.8 0-21.333333-8.533333-21.333333-21.333333L85.333333 192c0-12.8 8.533333-21.333333 21.333333-21.333333l213.333333 0 64 0 256 0 106.666667 0 170.666667 0c12.8 0 21.333333 8.533333 21.333333 21.333333L938.666667 618.666667zM448 362.666667l-85.333333 0 0-85.333333c0-12.8-8.533333-21.333333-21.333333-21.333333l-42.666667 0c-12.8 0-21.333333 8.533333-21.333333 21.333333l0 85.333333L192 362.666667c-12.8 0-21.333333 8.533333-21.333333 21.333333l0 42.666667c0 12.8 8.533333 21.333333 21.333333 21.333333l85.333333 0 0 85.333333c0 12.8 8.533333 21.333333 21.333333 21.333333l42.666667 0c12.8 0 21.333333-8.533333 21.333333-21.333333l0-85.333333 85.333333 0c12.8 0 21.333333-8.533333 21.333333-21.333333l0-42.666667C469.333333 371.2 460.8 362.666667 448 362.666667zM629.333333 426.666667c-29.866667 0-53.333333 23.466667-53.333333 53.333333 0 29.866667 23.466667 53.333333 53.333333 53.333333s53.333333-23.466667 53.333333-53.333333C682.666667 450.133333 659.2 426.666667 629.333333 426.666667zM778.666667 277.333333c-29.866667 0-53.333333 23.466667-53.333333 53.333333 0 29.866667 23.466667 53.333333 53.333333 53.333333s53.333333-23.466667 53.333333-53.333333C832 300.8 808.533333 277.333333 778.666667 277.333333z"></path>
+       </symbol>
+     </svg>
+    
+   <div class="cont">
+   <main>
+     <header><svg class="header-logo">
+         <use xlink:href="#logo"></use>
+      </svg>   
+      <h1 class="text-title">TIC-TAC-TOE</h1>      
+   </header>
+      <div class="strip"></div>  
+      
+   <section class="section">
+      <div class="area">
+         <div class="box" data-num="0" id="fire"></div>
+         <div class="box" data-num="1" id="fire"></div>
+         <div class="box" data-num="2" id="fire"></div>
+         <div class="box" data-num="3" id="fire"></div>
+         <div class="box" data-num="4" id="fire"></div>
+         <div class="box" data-num="5" id="fire"></div>
+         <div class="box" data-num="6" id="fire"></div>
+         <div class="box" data-num="7" id="fire"></div>
+         <div class="box" data-num="8" id="fire"></div>
+       </div>
+<div class="stat">
+   <table>
+      <th colspan="2"> Statistics </th>
+      <th colspan="2">Pre statistics 10 </th>
+      <th colspan="2">Pre-pre statistics 10</th>
+      <tr>
+         <td>You</td>
+         <td> <span id="sX"></span></td>
+         <td>You</td>
+         <td> <span id="pre-sX"></span></td>
+         <td>You</td>
+         <td> <span id="sX20"></span></td>
+      </tr>
+      <tr>
+         <td>Bot Kirril</td>
+         <td> <span id="sO"></span></td>
+         <td>Bot Kirril</td>
+         <td> <span id="pre-sO"></span></td>
+         <td>Bot Kirril</td>
+         <td> <span id="sO20"></span></td>
+      </tr>
+      <tr>
+         <td>Drav</td>
+         <td> <span id="sD"></span></td>
+         <td>Drav</td>
+         <td> <span id="pre-sD"></span></td>
+         <td>Drav</td>
+         <td> <span id="sD20"></span></td> 
+      </tr>
+      
+      
+   </table>
+</div>
+    <div id="modal-result-wrapper">
+       <div id="overlay"></div>
+         <div id="modal-window">
+           <div id="content">content </div>
+           <div id="btn-close">Start new game</div>
+          </div>
+    </div>
+   </section>
+   
+</main>
+<footer>
+      <div class ="footer-container" >
+       <div>  ©  2022 </div>
+       
+         <a href="https://github.com/flyether/">github</a>
+        
+         <a class="logo-rss" href="https://rs.school/js/" > </a>
+      </div>  
+     </footer>
+   </div>
+     <script src="./index.js"></script>
+   </body>
+</html>
