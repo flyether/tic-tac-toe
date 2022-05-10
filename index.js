@@ -201,7 +201,7 @@ function botZero(){
 	  let statD = 1
 	  localStorage.setItem('StatD', (Number(statD) + Number(localStorage.getItem("StatD"))))
 	 marmaduck("Draw...")}
-	arrAreaData[randNull].innerHTML = "O" // присваиваем физический ноль на поле фrrData
+	arrAreaData[randNull].innerHTML = "O" // присваиваем физический ноль на поле arrData
 	arr[randNull] = "O"	 // запишем значение в массив для расчетов
 }
 
