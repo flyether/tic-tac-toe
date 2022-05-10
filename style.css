@@ -14,7 +14,7 @@
     --hover-rose: #ffcb9a;
     --green-stipe: rgb(209, 232, 226);
     --beige: #d9b08c;
-    --tourmaline: rgb(21, 107, 109);
+    --tourmaline: rgb(18, 114, 116);
  }
  html {
     scroll-behavior: smooth; 
@@ -22,7 +22,7 @@
  }
  a{
     text-decoration:none;
-    color:  var(--beige);
+    color:   var(--beige);
     font-size: 30px;
     font-weight: bold;
     font-family: 'Inter';
